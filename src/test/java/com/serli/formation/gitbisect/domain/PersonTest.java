@@ -13,4 +13,11 @@ public class PersonTest {
         assertNull(person.getLastname());
     }
 
+    @Test
+    public void test_firstName_and_lastname_constructor() {
+        Person person = new Person("Gauthier", "Poulet");
+        assertEquals("Gauthier", person.getFirstname());
+        assertEquals("Poulet", person.getLastname());
+    }
+
 }
