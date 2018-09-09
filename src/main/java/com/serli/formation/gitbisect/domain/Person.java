@@ -11,6 +11,10 @@ public class Person {
         this.lastname = lastname;
     }
 
+    public Person(String surname) {
+        this.surname = surname;
+    }
+
     public void setSurname(String surname) {
         this.surname = surname;
     }
