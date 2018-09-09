@@ -1,4 +1,4 @@
-package com.serli.formation.gitbisect;
+package com.serli.formation.gitbisect.domain;
 
 public class Person {
 
@@ -9,5 +9,21 @@ public class Person {
     public Person(String surname, String lastname) {
         this.surname = surname;
         this.lastname = lastname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getLastname() {
+        return lastname;
     }
 }
