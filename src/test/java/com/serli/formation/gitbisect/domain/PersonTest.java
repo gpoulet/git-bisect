@@ -25,10 +25,18 @@ public class PersonTest {
     }
 
     @Test
-    public void test_firstName_and_lastname_constructor() {
+    public void test_firstname_and_lastname_constructor() {
         Person person = new Person("Gauthier", "Poulet");
         assertEquals("Gauthier", person.getFirstname());
         assertEquals("Poulet", person.getLastname());
+    }
+
+    @Test
+    public void test_firstname_and_lastname_and_age_constructor() {
+        Person person = new Person("Gauthier", "Poulet", "33");
+        assertEquals("Gauthier", person.getFirstname());
+        assertEquals("Poulet", person.getLastname());
+        assertEquals("33", person.getAge());
     }
 
 }
