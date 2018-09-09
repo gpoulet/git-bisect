@@ -6,14 +6,14 @@ public class Person {
 
     private String lastname;
 
-    private Integer age;
+    private String age;
 
     public Person(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
     }
 
-    public Person(String firstname, String lastname, Integer age) {
+    public Person(String firstname, String lastname, String age) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.age = age;
@@ -41,11 +41,11 @@ public class Person {
         return lastname;
     }
 
-    public Integer getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(String age) {
         this.age = age;
     }
 }
