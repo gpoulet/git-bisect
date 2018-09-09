@@ -6,9 +6,17 @@ public class Person {
 
     private String lastname;
 
+    private Integer age;
+
     public Person(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
+    }
+
+    public Person(String firstname, String lastname, Integer age) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.age = age;
     }
 
     public Person(String firstname) {
@@ -31,5 +39,13 @@ public class Person {
 
     public String getLastname() {
         return lastname;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
