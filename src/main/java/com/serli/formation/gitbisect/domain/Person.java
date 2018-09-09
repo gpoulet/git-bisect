@@ -14,6 +14,8 @@ public class Person {
     public Person(String surname) {
         this.surname = surname;
     }
+    
+    public Person() {}
 
     public void setSurname(String surname) {
         this.surname = surname;
