@@ -14,6 +14,17 @@ public class PersonTest {
     }
 
     @Test
+    public void test_empty_constructor_with_setters() {
+        Person person = new Person();
+
+        person.setFirstname("Alain");
+        person.setFirstname("Chabat");
+
+        assertEquals("Alain", person.getFirstname());
+        assertEquals("Chabat", person.getLastname());
+    }
+
+    @Test
     public void test_firstName_and_lastname_constructor() {
         Person person = new Person("Gauthier", "Poulet");
         assertEquals("Gauthier", person.getFirstname());
